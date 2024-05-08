@@ -1,15 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        Account account = new Account();
-        account.setAccountNumber(4443222l);
-        account.setBalance(0l);
-        account.setEmail("k@mail.com");
-        account.setCustomerName("Khaled Al");
-        account.accountInfo();
-        account.withdrow(10.00);
-        account.accountInfo();
-        account.deposite(200.00);
-        account.withdrow(6.5);
-        account.accountInfo();
+
+        Customer cus1 = new Customer();
+        Customer cus2 = new Customer("KAA", "k@email.com");
+        Customer cus3 = new Customer("MAA", 3500d, "m@mail.com");
+
+//  Account Class Test:
+//        Account firstAcc = new Account();
+//
+//        Account secAcc = new Account("Ellie", "e@mail.com", "456");
+//        Account thiAcc = new Account("433343", 1000d, "Kall", "k@mail.com", "011888");
+//        firstAcc.accountInfo();
+//        secAcc.accountInfo();
+//        thiAcc.accountInfo();
+//        firstAcc.deposite(65.5);
+//        secAcc.withdrow(13.22);
+//        firstAcc.accountInfo();
+//        secAcc.accountInfo();
+
     }
 }

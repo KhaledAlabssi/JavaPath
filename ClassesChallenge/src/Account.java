@@ -1,15 +1,15 @@
 public class Account {
-    private long accountNumber;
+    private String accountNumber;
     private double balance;
     private String customerName;
     private String email;
     private String phoneNumber;
 
-    public long getAccountNumber() {
+    public String getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(long accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -43,6 +43,23 @@ public class Account {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public Account () {
+        this("333", 0.0, "Unknow", "e@email.com", "4444");
+    }
+
+    public Account(String customerName, String email, String phoneNumber) {
+        this("321", 0.0, customerName, email, phoneNumber);
+    }
+
+    public Account(String accountNumber, double balance, String customerName, String email, String phoneNumber) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        System.out.println("New instance been created");
     }
 
     public void accountInfo() {
