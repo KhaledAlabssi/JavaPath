@@ -1,9 +1,25 @@
 public class Main {
     public static void main(String[] args) {
 
-        Customer cus1 = new Customer();
-        Customer cus2 = new Customer("KAA", "k@email.com");
-        Customer cus3 = new Customer("MAA", 3500d, "m@mail.com");
+
+        for(int i = 1; i <= 5; i++){
+            StudentPojo s = new StudentPojo(
+                    "Sp112233" + i ,
+                    switch (i) {
+                        case 1 -> "KA";
+                        case 2 -> "MA";
+                        case 3 -> "OO";
+                        case 4 -> "BB";
+                        case 5 -> "SS";
+                        default -> "Unknown";
+                    },
+                    "1/1/2022",
+                    "Java");
+            System.out.println(s);
+        }
+//        Customer cus1 = new Customer();
+//        Customer cus2 = new Customer("KAA", "k@email.com");
+//        Customer cus3 = new Customer("MAA", 3500d, "m@mail.com");
 
 //  Account Class Test:
 //        Account firstAcc = new Account();
